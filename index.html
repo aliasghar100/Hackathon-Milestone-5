@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Link Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container" class="form-container">
+        <form id="resume-form">
+            <h2>Create Your Resume</h2>
+            
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="name">User Name</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div id="education-section">
+                <h3>Education</h3>
+                <input type="text" placeholder="Degree" required>
+                <input type="text" placeholder="Institution" required>
+                <input type="text" placeholder="Graduation Year" required>
+            </div>
+            <button type="button" id="add-education">Add Education</button>
+
+            <div id="experience-section">
+                <h3>Work Experience</h3>
+                <input type="text" placeholder="Job Title" required>
+                <input type="text" placeholder="Company" required>
+                <input type="text" placeholder="Duration" required>
+            </div>
+            <button type="button" id="add-experience">Add Experience</button>
+
+            <div>
+                <label for="skills">Skills (comma separated)</label>
+                <input type="text" id="skills" placeholder="HTML, CSS, JavaScript" required>
+            </div>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+            <button type="button" id="download-pdf">Download as PDF</button>
+        </form>
+    </div>
+
+    <div id="resume-display" class="resume-display">
+        <div id="resume-content"></div>
+    </div>
+
+    <!-- Load jsPDF from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

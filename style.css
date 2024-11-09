@@ -1,0 +1,67 @@
+/* Basic layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+/* Form container styling */
+.form-container {
+  width: 40%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Resume display styling */
+.resume-display {
+  width: 40%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: none;
+}
+
+.resume-display h2 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.resume-display h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background: #45a049;
+}
